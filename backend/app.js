@@ -15,6 +15,9 @@ const assessmentRoutes = require('./routes/assessmentRoutes');
 app.use('/api/auth', authRoutes);
 app.use('/api/assessment', assessmentRoutes);
 
+// Database connection
+const db = require('./config/dbConfig');
+
 // Start server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
