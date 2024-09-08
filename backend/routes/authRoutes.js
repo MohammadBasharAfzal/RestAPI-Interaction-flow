@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const db = require('../config/dbConfig');
 
 // JWT Secret Key
-const JWT_SECRET = 'your_jwt_secret_key_here'; // Replace with a strong secret key
+const JWT_SECRET = '1234598765'; // Replace with a strong secret key
 
 // Signup Route
 router.post('/signup', async (req, res) => {
