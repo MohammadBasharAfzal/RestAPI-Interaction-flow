@@ -13,7 +13,7 @@ document.getElementById('screen2-form').addEventListener('submit', function(even
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            loadPage('screen3'); // Navigate to Screen 3
+            window.location.href = '../pages/screen3.html'; // Navigate to Screen 3
         } else {
             alert('Error: ' + data.message);
         }

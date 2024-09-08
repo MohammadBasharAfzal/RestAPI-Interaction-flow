@@ -15,7 +15,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     .then(data => {
         if (data.success) {
             alert('Sign-up successful!');
-            window.location.href = './index.html'; // Redirect to assessment
+            window.location.href = '../pages/screen1.html'; // Redirect to assessment
         } else {
             alert('Error: ' + data.message);
         }
